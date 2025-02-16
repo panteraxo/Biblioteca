@@ -43,7 +43,7 @@ public class CategoriaController {
         obj.setDescripcion(obj.getDescripcion());
         Categoria objSalida = CategoriaService.addCategoria(obj);
         if(objSalida == null){
-            salida.put("mensaje", "No se pudo agregar el Categoria");
+            salida.put("mensaje", "No se pudo agregar la Categoria");
             
         }else{
             salida.put("mensaje", "Categoria agregado correctamente");
@@ -76,10 +76,5 @@ public class CategoriaController {
            salida.put("mensaje", "Categoria no se ha eliminado correctamente");
         }
         return ResponseEntity.ok(salida);
-    }
-
-
-
-   
-    
+    }    
 }

@@ -68,7 +68,7 @@ export const LibraryColumn = ({ setData, data, handleDelete }) => {
               <AlertDialogContent>
                 <AlertDialogHeader>
                   <AlertDialogTitle>
-                    Estas seguro de eliminar este Editorial?
+                    Estas seguro de eliminar este Libro?
                   </AlertDialogTitle>
                 </AlertDialogHeader>
                 <AlertDialogFooter>

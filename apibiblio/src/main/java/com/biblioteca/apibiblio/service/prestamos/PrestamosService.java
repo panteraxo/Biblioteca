@@ -39,12 +39,7 @@ public class PrestamosService implements IPrestamosService {
     public Prestamos updatePrestamos(Prestamos Prestamos, Long id) {
         return prestamosRepository.findById(id)
                 .map(Prestamos1 -> {
-                    
-                    Prestamos1.setFechaPrestamo(Prestamos.getFechaPrestamo());
-                    Prestamos1.setFechaDevolucion(Prestamos.getFechaDevolucion());
                     Prestamos1.setEstado(Prestamos.getEstado());
-                    Prestamos1.setEstudiante(Prestamos.getEstudiante());
-                    Prestamos1.setLibro(Prestamos.getLibro());
                     return prestamosRepository.save(Prestamos1);
 
                 })

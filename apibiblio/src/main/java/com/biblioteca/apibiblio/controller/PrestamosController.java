@@ -55,11 +55,11 @@ public class PrestamosController {
         return ResponseEntity.ok(salida);
     }
 
-    @PutMapping("/update")
+    @PutMapping("/update/{id}")
     @ResponseBody
-    public ResponseEntity<?> updatePrestamos(@RequestBody Prestamos obj){
+    public ResponseEntity<?> updatePrestamos(@PathVariable Long id, @RequestBody Prestamos obj){
         HashMap<String,Object> salida = new HashMap<>();
-        Prestamos objSalida = PrestamosService.updatePrestamos(obj, obj.getPrestamoId());
+        Prestamos objSalida = PrestamosService.updatePrestamos(obj, id);
         if(objSalida == null){
             salida.put("mensaje", "No se pudo actualizar el Prestamos");
             

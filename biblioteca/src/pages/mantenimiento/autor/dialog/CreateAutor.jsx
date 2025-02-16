@@ -12,7 +12,7 @@ import { useForm } from "react-hook-form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { getPetition, postPetition } from "@/resources/ApiFunction";
-function CreateCategory({ setData }) {
+function NewAutor({ setData }) {
   const { register, handleSubmit } = useForm();
   const [open, setOpen] = useState(false);
 
@@ -70,4 +70,4 @@ function CreateCategory({ setData }) {
   );
 }
 
-export default CreateCategory;
+export default NewAutor;
