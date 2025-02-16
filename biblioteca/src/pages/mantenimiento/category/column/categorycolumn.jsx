@@ -43,7 +43,7 @@ export const CategoryColumn = ({ data, setData, handleDelete }) => {
               <AlertDialogContent>
                 <AlertDialogHeader>
                   <AlertDialogTitle>
-                    Are you sure you want delete this Kiosk?
+                    Estas seguro en eliminar esta categoria?
                   </AlertDialogTitle>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
